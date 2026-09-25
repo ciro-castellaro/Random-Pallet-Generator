@@ -1,73 +1,81 @@
-# COMO UTILIZAR LA PAGINA WEB
+# HOW TO USE THE WEBSITE
 
-1- Seleccionar la cantidad de paletas a generar (6, 8 o 9)
+1- Select the number of palettes to generate (6, 8, or 9)
 
-2- Seleccionar el tipo de codigo de color a generar (HEX o HSL)
+2- Select the color code format to generate (HEX or HSL)
 
-3- Una vez seleccionados ambos, apretar el boton "Generar paleta" para crear la cantidad deseada de colores aleatorios
+3- Once both options are selected, click the "Generate Palette" button to create the desired number of random colors
 
-## COMO COPIAR LOS CODIGOS AL PORTAPAPELES
+## HOW TO COPY COLOR CODES TO THE CLIPBOARD
 
-1- Mover el cursor al color que se desea copiar y luego dar click izquierdo
+1- Move the cursor over the color you want to copy and left-click on it
 
-2- En la parte de abajo de la pagina saldra un Toast aclarando que el color fue copiado exitosamente
+2- A Toast notification will appear at the bottom of the page confirming that the color was successfully copied
 
-3- pegar el color donde se desee usar
+3- Paste the color wherever you want to use it
 
-## DESICIONES TECNICAS TOMANDAS
+## TECHNICAL DECISIONS
 
-### 20/05/2026
+### 05/20/2026
 
-    Se decide separar HTML, CSS y JavaScript en archivos distintos para mantener el código más organizado y fácil de mantener.
+```
+HTML, CSS, and JavaScript are separated into different files to keep the code more organized and easier to maintain.
 
-    Se utilizan variables CSS para manejar colores y facilitar futuros cambios de diseño.
+CSS variables are used to manage colors and make future design changes easier.
 
-    Se prioriza el uso de unidades responsivas como rem para mejorar la adaptabilidad visual.
+Responsive units such as `rem` are prioritized to improve visual adaptability.
+```
 
-### 21/05/2026
+### 05/21/2026
 
-    Se decide utilizar una paleta oscura con tonos negros, grises y azules para darle una estética más moderna y cómoda visualmente.
+```
+A dark color palette using black, gray, and blue tones is chosen to create a more modern and visually comfortable aesthetic.
 
-    Se elige permitir generar colores en formato HEX y HSL para darle más flexibilidad al usuario dependiendo del uso que quiera darle a la paleta.
+HEX and HSL color formats are supported to provide users with more flexibility depending on how they want to use the palette.
 
-    Se decide mantener una interfaz simple y minimalista para que la generación de paletas sea rápida e intuitiva.
+A simple and minimalist interface is maintained to make palette generation fast and intuitive.
 
-    Se utiliza JavaScript para generar colores aleatorios dinámicamente sin necesidad de recargar la página.
+JavaScript is used to dynamically generate random colors without requiring the page to be reloaded.
 
-    Se implementa la función de copiar colores al portapapeles para mejorar la experiencia de usuario.
+A color-copying feature is implemented to improve the user experience.
+```
 
-### 22/05/2026
+### 05/22/2026
 
-    Se agrega un sistema Toast para mostrar mensajes visuales sin interrumpir la experiencia del usuario.
+```
+A Toast notification system is added to display visual messages without interrupting the user experience.
 
-    Se decide generar colores completamente aleatorios para aumentar la variedad de paletas.
+Colors are generated completely randomly to increase palette variety.
+```
 
-## COMO EJECUTAR Y DESPLEGAR LA PAGINA
+## HOW TO RUN AND DEPLOY THE WEBSITE
 
-### Ejecutar localmente
+### Running Locally
 
-1- Descargar o clonar el repositorio
+1- Download or clone the repository
 
-En git bash hacemos el comando "git clone LINK_DEL_REPOSITORIO"
+In Git Bash, run the following command:
 
-2- Abrir la carpeta del proyecto
+`git clone REPOSITORY_URL`
 
-3- Instalar la extension Live Server para Visual Studio Code
+2- Open the project folder
 
-4- Ejecutar el archivo index.html y apretar el boton de la esquina derecha abajo que dice "Go Live"
+3- Install the Live Server extension for Visual Studio Code
 
-### Desplegar la pagina
+4- Open the `index.html` file and click the "Go Live" button in the bottom-right corner
 
-La página puede desplegarse utilizando servicios gratuitos como:
+### Deploying the Website
 
-GitHub Pages
-Netlify
-Vercel
+The website can be deployed using free services such as:
 
-### Pasos generales para desplegar:
+* GitHub Pages
+* Netlify
+* Vercel
 
-1- Subir el proyecto a GitHub
+### General Deployment Steps
 
-2- Conectar el repositorio con la plataforma de despliegue
+1- Upload the project to GitHub
 
-3- Publicar la página automáticamente
+2- Connect the repository to the deployment platform
+
+3- Publish the website automatically
